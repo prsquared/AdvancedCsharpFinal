@@ -8,7 +8,7 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            GenericType<int> type = new GenericType<int>();
+            GenericList<int> type = new GenericList<int>();
             type.AddItem(3);
             type.AddItem(2);
             type.AddItem(0);
@@ -21,10 +21,10 @@ namespace Generics
         }
     }
 
-    class GenericType<T> where T:struct
+    class GenericList<T> where T:struct
     {
         private List<T> list;
-        public GenericType()
+        public GenericList()
         {
             list = new List<T>();
         }
